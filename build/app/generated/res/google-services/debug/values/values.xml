@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">168519523692-our53sa903s7saokk60c4re5mrrp3ce8.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://covid-alert-60785.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">168519523692</string>
+    <string name="google_api_key" translatable="false">AIzaSyA8EQj2yBr63nzyFjx4o1At5R1AiTEJXg0</string>
+    <string name="google_app_id" translatable="false">1:168519523692:android:173d50fa4db11416252749</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA8EQj2yBr63nzyFjx4o1At5R1AiTEJXg0</string>
+    <string name="google_storage_bucket" translatable="false">covid-alert-60785.appspot.com</string>
+    <string name="project_id" translatable="false">covid-alert-60785</string>
+</resources>
