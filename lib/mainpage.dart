@@ -5,6 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:geolocator/geolocator.dart';
 import 'dart:math';
+import 'package:geocoder/geocoder.dart';
 bool loggedIn = false;
 class mainPage extends StatefulWidget {
   @override
@@ -15,6 +16,16 @@ class User
   String uID;
   GeoPoint loc;
   User(String this.uID, GeoPoint this.loc);
+}
+class Intersectie
+{
+  String uID;
+  DateTime timp;
+
+   Intersectie(String name, DateTime time) {
+    this.uID = name;
+    this.timp = time;
+  }
 }
 List<User> Lista = new List();
 Position userPosition;
@@ -124,17 +135,28 @@ class _mainPageState extends State<mainPage> {
     }
 
     var list2;
-    var newList = List<dynamic>();
+    Intersectie newIntersection = new Intersectie('', DateTime.now());
     var qs = await _firestore.collection('intersections').document(loggedInUser.uid).get();
     if(qs.exists == false)
       _firestore.collection('intersections').document(loggedInUser.uid).setData({});
-    newList = qs.data['Users'];
+    var newList = qs.data['Users'].toList();
+    List<Placemark> newPlace = await Geolocator().placemarkFromCoordinates(userPosition.latitude, userPosition.longitude);
+
+    // this is all you need
+    Placemark placeMark  = newPlace[0];
+    String name = placeMark.name;
+    String subLocality = placeMark.subLocality;
+    String locality = placeMark.locality;
+    String administrativeArea = placeMark.administrativeArea;
+    String postalCode = placeMark.postalCode;
+    String country = placeMark.country;
+    String address = "${name}, ${subLocality}, ${locality}, ${administrativeArea} ${postalCode}, ${country}";
     for(int i = 0 ; i < Lista.length ; i ++)
       if(Lista[i].uID != loggedInUser.uid)
       {
+        newIntersection = Intersectie(Lista[i].uID , DateTime.now());
         if(computeDistance(Lista[i].loc.latitude , Lista[i].loc.longitude , userPosition.latitude , userPosition.longitude) < 5.0)
-          if(newList.indexOf(Lista[i].uID) == -1)
-          newList.add(Lista[i].uID);
+            newList.add({'uID' : Lista[i].uID , 'date' : DateTime.now() , 'location' : address});
      }
     _firestore.collection('intersections').document(loggedInUser.uid).updateData({'Users' : newList});
     print('doing it');
@@ -207,7 +229,7 @@ class _mainPageState extends State<mainPage> {
   }
   void timerStart() {
     timer = Timer.periodic(
-        Duration(seconds: 5), (Timer t) => updateLocation());
+        Duration(seconds: 10), (Timer t) => updateLocation());
   }
   void timerStop()
   {
@@ -258,97 +280,96 @@ class _mainPageState extends State<mainPage> {
     QuerySnapshot qs = await _firestore.collection('intersections').getDocuments();
     list = qs.documents;
   }
+
   Widget build(BuildContext context) {
     init();
     return new WillPopScope(
       onWillPop: _onBackPressed,
-      child: new Scaffold(
-        appBar: AppBar(
-          title: Text('CovidAlert'),
-        ),
-        body: Center(
-            child: Column(
-              children: <Widget>[
-                SizedBox(height: 200,child: Icon(Icons.person, size: 100 ,color: culoare_pers,)),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 15 , horizontal: 5),
-                  child: AnimatedContainer(
-                    duration: Duration(milliseconds: 800),
-                    child: Text(Str,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                    ),),
-                  ),
-                ),
-
-                Container(
-                  width: 100,
-                  height: 100,
-                  child: FloatingActionButton(
-
-                    onPressed: () {
-                      init();
-                      if (buttonStatus == false) {
-                        Str = mesaj_verde;
-                        buttonStatus = true;
-                        iconita = Icon(Icons.location_on,size : 50);
-                        buttonColor = Colors.green;
-                        print('DID IT');
-                      }
-                      else if (buttonStatus == true) {
-                        Str = mesaj_rosu;
-                        iconita = Icon(Icons.location_off , size : 50);
-
-                        buttonStatus = false;
-                        buttonColor = Colors.red;
-                      }
-                      setState(() {
-                        buttonColor ;
-                        alerta ;
-                      });
-                      if(buttonStatus == true) {
-                        timerStart();
-                        }
-                      else
-                        timerStop();
-
-                    },
-                      child: AnimatedContainer(
-                        width: 100,
-                        height: 100,
-                        child: iconita,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: buttonColor,
-
-                        ),
-                          duration: Duration(milliseconds:300),
-                      ),
-                  ),
-                ),
-                SizedBox(height: 300,),
-
-                Align(
-                  alignment: Alignment.bottomCenter,
-                  child:RaisedButton(
-                    elevation: 15,
-                    color: Colors.red,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                        side: BorderSide(color: Colors.red)
-                    ),
-                    onPressed: () {
-                      _showDialog();
-                    },
-                    child: const Text('Am fost diagnosticat', style: TextStyle(fontSize: 20 , color: Colors.white)),
-                ),
-                ),
-              ],
-            ),
+        child: new Scaffold(
+          resizeToAvoidBottomPadding: false,
+          appBar: AppBar(
+            title: Text('CovidAlert'),
           ),
-      ),
+          body: Center(
+              child: Column(
+                children: <Widget>[
+                  SizedBox(height: 200,child: Icon(Icons.person, size: 100 ,color: culoare_pers,)),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 15 , horizontal: 5),
+                    child: AnimatedContainer(
+                      duration: Duration(milliseconds: 800),
+                      child: Text(Str,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),),
+                    ),
+                  ),
+
+                  Container(
+                    width: 100,
+                    height: 100,
+                    child: FloatingActionButton(
+
+                      onPressed: () {
+                        init();
+                        if (buttonStatus == false) {
+                          Str = mesaj_verde;
+                          buttonStatus = true;
+                          iconita = Icon(Icons.location_on,size : 50);
+                          buttonColor = Colors.green;
+                          print('DID IT');
+                        }
+                        else if (buttonStatus == true) {
+                          Str = mesaj_rosu;
+                          iconita = Icon(Icons.location_off , size : 50);
+
+                          buttonStatus = false;
+                          buttonColor = Colors.red;
+                        }
+                        setState(() {
+                          buttonColor ;
+                          alerta ;
+                        });
+                        if(buttonStatus == true) {
+                          timerStart();
+                          }
+                        else
+                          timerStop();
+
+                      },
+                        child: AnimatedContainer(
+                          width: 100,
+                          height: 100,
+                          child: iconita,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: buttonColor,
+
+                          ),
+                            duration: Duration(milliseconds:300),
+                        ),
+                    ),
+                  ),
+                  SizedBox(height: 200,),
+                  RaisedButton(
+                      elevation: 15,
+                      color: Colors.red,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
+                          side: BorderSide(color: Colors.red)
+                      ),
+                      onPressed: () {
+                        _showDialog();
+                      },
+                      child: const Text('Am fost diagnosticat', style: TextStyle(fontSize: 20 , color: Colors.white)),
+                  ),
+
+                ],
+              ),
+            ),
+        ),
     );
   }
 }
