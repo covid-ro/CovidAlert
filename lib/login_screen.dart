@@ -18,88 +18,144 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset : false,
+
       key : key1,
       backgroundColor: Colors.white,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.0),
+        padding: EdgeInsets.symmetric(horizontal: 0.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Hero(
-              tag: 'logo',
+              tag: 'reallogo',
               child: Container(
-                child: Icon(Icons.check_circle,
-                  color: Colors.green,
-                  size: 50,
+                width: MediaQuery
+                    .of(context)
+                    .size
+                    .width,
+                height: MediaQuery
+                    .of(context)
+                    .size
+                    .height * 0.25,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage('images/SPHERESTOP.png'),
+                  ),
                 ),
-                height: 60.0,
               ),
             ),
             SizedBox(
-              height: 48.0,
+              height: MediaQuery.of(context).size.height * 0.1,
             ),
-            TextField(
-              textAlign: TextAlign.center,
-              style: normalblack,
-              onChanged: (value) {
-                email = value;
-              },
-              decoration: InputDecoration(
-
-                hintText: 'Enter your email',
-                contentPadding:
-                EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderSide:
-                  BorderSide(color: Colors.lightBlueAccent, width: 1.0),
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderSide:
-                  BorderSide(color: Colors.lightBlueAccent, width: 2.0),
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 80),
+              child: Row(
+                children: <Widget>[
+                  Text(
+                    'Autentificare',
+                    style: TextStyle(
+                      fontFamily: 'sfpro',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 35,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.03,
+            ),
+            Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 80),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.6,
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      style: normalblack,
+                      onChanged: (value) {
+                        email = value;
+                      },
+                      decoration: InputDecoration(
+                        hintText: 'email',
+                        hintStyle: TextStyle(
+                            fontFamily: 'sfpro',
+                            fontSize: 17,
+                            color: Colors.black.withOpacity(0.4)
+                        ),
+                        contentPadding:
+                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:
+                          BorderSide(color: Color.fromRGBO(234, 240, 255, 1), width: 1.0),
+                          borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:
+                          BorderSide(color: Color.fromRGBO(234, 240, 255, 1), width: 2.0),
+                          borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
             SizedBox(
               height: 8.0,
             ),
-            TextField(
-              textAlign: TextAlign.center,
-              obscureText: true,
-              onChanged: (value) {
-               password = value;
-              },
-              decoration: InputDecoration(
-                hintText: 'Enter your password.',
-                contentPadding:
-                EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderSide:
-                  BorderSide(color: Colors.lightBlueAccent, width: 1.0),
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderSide:
-                  BorderSide(color: Colors.lightBlueAccent, width: 2.0),
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 80),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.6,
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      obscureText: true,
+                      onChanged: (value) {
+                       password = value;
+                      },
+                      decoration: InputDecoration(
+                        hintText: 'parola',
+                        hintStyle: TextStyle(
+                            fontFamily: 'sfpro',
+                            fontSize: 17,
+                            color: Colors.black.withOpacity(0.4)
+                        ),
+                        contentPadding:
+                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:
+                          BorderSide(color: Color.fromRGBO(234, 240, 255, 1), width: 1.0),
+                          borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:
+                          BorderSide(color: Color.fromRGBO(234, 240, 255, 1), width: 2.0),
+                          borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
             SizedBox(
-              height: 24.0,
+              height: 60.0,
             ),
             Padding(
               padding: EdgeInsets.symmetric(vertical: 16.0),
               child: Material(
-                color: Colors.lightBlueAccent,
+                color: Colors.blueAccent,
                 borderRadius: BorderRadius.all(Radius.circular(30.0)),
                 elevation: 5.0,
                 child: MaterialButton(
@@ -123,11 +179,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       );
                     }
                   },
-                  minWidth: 200.0,
+                  minWidth: 160.0,
                   height: 42.0,
                   child: Text(
-                    'Log In',
-                    style: TextStyle(color: Colors.white),
+                    'Autentificare',
+                    style: TextStyle(color: Colors.white , fontFamily: 'sfpro' , fontSize: 16),
                   ),
                 ),
               ),

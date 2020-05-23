@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:covid_alert/welcome_screen.dart';
 import 'package:covid_alert/mainpage.dart';
+import 'package:covid_alert/infoPage.dart';
 void main() => runApp(FlashChat());
 
 class FlashChat extends StatelessWidget {
@@ -9,7 +10,7 @@ class FlashChat extends StatelessWidget {
     if(loggedIn == true)
       return mainPage();
     else
-      return WelcomeScreen();
+      return decideInfoPage();
   }
   @override
   Widget build(BuildContext context) {

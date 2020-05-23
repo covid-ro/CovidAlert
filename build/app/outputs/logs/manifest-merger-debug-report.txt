@@ -14,6 +14,7 @@ MERGED from [:firebase_core] D:\CovidAlert\covidAlert\build\firebase_core\interm
 MERGED from [:firebase_core_web] D:\CovidAlert\covidAlert\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:geolocator] D:\CovidAlert\covidAlert\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:google_api_availability] D:\CovidAlert\covidAlert\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:geocoder] D:\CovidAlert\covidAlert\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:location_permissions] D:\CovidAlert\covidAlert\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\2a70ee504bd32b1bd949b6dd58d86852\firebase-analytics-17.2.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\df74b084c564d3c99d6a98c722c73530\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
@@ -192,6 +193,8 @@ MERGED from [:geolocator] D:\CovidAlert\covidAlert\build\geolocator\intermediate
 MERGED from [:geolocator] D:\CovidAlert\covidAlert\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_api_availability] D:\CovidAlert\covidAlert\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_api_availability] D:\CovidAlert\covidAlert\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:geocoder] D:\CovidAlert\covidAlert\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:geocoder] D:\CovidAlert\covidAlert\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:location_permissions] D:\CovidAlert\covidAlert\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:location_permissions] D:\CovidAlert\covidAlert\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\2a70ee504bd32b1bd949b6dd58d86852\firebase-analytics-17.2.2\AndroidManifest.xml:5:5-44
