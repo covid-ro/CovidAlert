@@ -17,7 +17,7 @@ MERGED from [:google_api_availability] D:\CovidAlert\covidAlert\build\google_api
 MERGED from [:geocoder] D:\CovidAlert\covidAlert\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:location_permissions] D:\CovidAlert\covidAlert\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\2a70ee504bd32b1bd949b6dd58d86852\firebase-analytics-17.2.2\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\df74b084c564d3c99d6a98c722c73530\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\8c00590b887a24f1f63a4ee21fdc5407\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\0d6a81a5dd3d1c4dc9c2f1ba14fea204\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\04e893691271e98d497cfddd1f6aa77a\jetified-firebase-database-17.0.0\AndroidManifest.xml:15:1-36:12
 MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\a83bb62cb43b672cf00b874e0ee6110c\firebase-auth-19.2.0\AndroidManifest.xml:17:1-42:12
@@ -37,7 +37,7 @@ MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users
 MERGED from [com.google.android.gms:play-services-tasks:17.0.2] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\c73547dd86491e936f2f95cebe6b68b1\play-services-tasks-17.0.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\08dda63aa6024eef34fb6b14605fdb41\play-services-places-placereport-16.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\bf32d33463f95f7bff9ab9ece9656a67\play-services-ads-identifier-17.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\461c8773f4c005dd0df3217f4bf247c4\jetified-play-services-basement-17.2.1\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\9a2a77de3dd0f046b84e5072442429a9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\0d479d426be2ba1f4bdfee2f9a7aa519\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\5a1de8d3594afca67ad230d5d25a73b9\activity-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\4881302d1430cfdcaa10344523e2ce7f\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -89,8 +89,8 @@ MERGED from [:firebase_core] D:\CovidAlert\covidAlert\build\firebase_core\interm
 MERGED from [:firebase_core] D:\CovidAlert\covidAlert\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\2a70ee504bd32b1bd949b6dd58d86852\firebase-analytics-17.2.2\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\2a70ee504bd32b1bd949b6dd58d86852\firebase-analytics-17.2.2\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\df74b084c564d3c99d6a98c722c73530\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\df74b084c564d3c99d6a98c722c73530\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\8c00590b887a24f1f63a4ee21fdc5407\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\8c00590b887a24f1f63a4ee21fdc5407\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\0d6a81a5dd3d1c4dc9c2f1ba14fea204\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\0d6a81a5dd3d1c4dc9c2f1ba14fea204\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\04e893691271e98d497cfddd1f6aa77a\jetified-firebase-database-17.0.0\AndroidManifest.xml:28:5-34:19
@@ -127,8 +127,8 @@ MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\08dda63aa6024eef34fb6b14605fdb41\play-services-places-placereport-16.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\bf32d33463f95f7bff9ab9ece9656a67\play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\bf32d33463f95f7bff9ab9ece9656a67\play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\461c8773f4c005dd0df3217f4bf247c4\jetified-play-services-basement-17.2.1\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\461c8773f4c005dd0df3217f4bf247c4\jetified-play-services-basement-17.2.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\9a2a77de3dd0f046b84e5072442429a9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\9a2a77de3dd0f046b84e5072442429a9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.2.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\35f29bb1a578f0319e9c3e21730b6b49\core-1.2.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.2.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\35f29bb1a578f0319e9c3e21730b6b49\core-1.2.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\4227c25f5adddf6ac1aa1a65c6b6f6a4\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
@@ -199,8 +199,8 @@ MERGED from [:location_permissions] D:\CovidAlert\covidAlert\build\location_perm
 MERGED from [:location_permissions] D:\CovidAlert\covidAlert\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\2a70ee504bd32b1bd949b6dd58d86852\firebase-analytics-17.2.2\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\2a70ee504bd32b1bd949b6dd58d86852\firebase-analytics-17.2.2\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\df74b084c564d3c99d6a98c722c73530\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\df74b084c564d3c99d6a98c722c73530\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\8c00590b887a24f1f63a4ee21fdc5407\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\8c00590b887a24f1f63a4ee21fdc5407\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\0d6a81a5dd3d1c4dc9c2f1ba14fea204\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\0d6a81a5dd3d1c4dc9c2f1ba14fea204\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-database:17.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\04e893691271e98d497cfddd1f6aa77a\jetified-firebase-database-17.0.0\AndroidManifest.xml:19:5-21:41
@@ -239,8 +239,8 @@ MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\08dda63aa6024eef34fb6b14605fdb41\play-services-places-placereport-16.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\bf32d33463f95f7bff9ab9ece9656a67\play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\bf32d33463f95f7bff9ab9ece9656a67\play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\461c8773f4c005dd0df3217f4bf247c4\jetified-play-services-basement-17.2.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\461c8773f4c005dd0df3217f4bf247c4\jetified-play-services-basement-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\9a2a77de3dd0f046b84e5072442429a9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\9a2a77de3dd0f046b84e5072442429a9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\0d479d426be2ba1f4bdfee2f9a7aa519\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\0d479d426be2ba1f4bdfee2f9a7aa519\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\5a1de8d3594afca67ad230d5d25a73b9\activity-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -530,8 +530,8 @@ ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vladc\.gradle\c
 	android:name
 		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\f70760110209efa834b2ac82ed8da886\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\461c8773f4c005dd0df3217f4bf247c4\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\9a2a77de3dd0f046b84e5072442429a9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\461c8773f4c005dd0df3217f4bf247c4\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\9a2a77de3dd0f046b84e5072442429a9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\461c8773f4c005dd0df3217f4bf247c4\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\9a2a77de3dd0f046b84e5072442429a9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58

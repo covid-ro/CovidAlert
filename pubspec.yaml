@@ -56,6 +56,7 @@ flutter:
    - images/SPHERESTOP.png
    - images/SCUT_ROSU.png
    - images/SCUT_VERDE.png
+   - images/OMULETII.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

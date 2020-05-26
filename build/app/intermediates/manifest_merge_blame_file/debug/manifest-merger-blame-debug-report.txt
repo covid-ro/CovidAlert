@@ -246,11 +246,11 @@
 139-->[com.google.firebase:firebase-common:19.3.0] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\f70760110209efa834b2ac82ed8da886\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
 140
 141        <meta-data
-141-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\461c8773f4c005dd0df3217f4bf247c4\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+141-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\9a2a77de3dd0f046b84e5072442429a9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
 142            android:name="com.google.android.gms.version"
-142-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\461c8773f4c005dd0df3217f4bf247c4\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
+142-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\9a2a77de3dd0f046b84e5072442429a9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
 143            android:value="@integer/google_play_services_version" />
-143-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\461c8773f4c005dd0df3217f4bf247c4\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+143-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\vladc\.gradle\caches\transforms-2\files-2.1\9a2a77de3dd0f046b84e5072442429a9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
 144    </application>
 145
 146</manifest>

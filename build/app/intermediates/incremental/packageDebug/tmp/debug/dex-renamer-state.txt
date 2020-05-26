@@ -1,4 +1,4 @@
-#Sun May 24 00:30:55 MSK 2020
+#Sun May 24 18:51:25 MSK 2020
 base.2=D\:\\CovidAlert\\covidAlert\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes2.dex
 base.1=D\:\\CovidAlert\\covidAlert\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
 base.0=D\:\\CovidAlert\\covidAlert\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
